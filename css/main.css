@@ -1,4 +1,4 @@
-/*****  Base Styles  *****/
+/*****  Base Styles -- Mobile First *****/
 html {
 	font-size: 16px;
 }
@@ -88,6 +88,10 @@ header nav ul li a{
 .top-section,
 .bottom-section {
 	width: 90%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-flow: row wrap;
 }
 
 .main-image {
@@ -131,23 +135,6 @@ header nav ul li a{
 	width: 100%;
 }
 
-/*  Save these for desktop styles  
-.section-one h3 {
-	padding: 10px 0;
-}
-
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
-}
-
-.section-two h3,
-.section-three h3 {
-	padding: 10px 30px;
-}
-
-*/
-
 .menu {
 	list-style: none;
 	padding: 0;
@@ -171,13 +158,69 @@ header nav ul li a{
 /*****************  Footer *****************/
 
 footer {
+	width: 90%;
 	border-top: 3px solid #eee;
-	margin: 0 auto;
-	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 footer span {
 	font-family: 'Galada', cursive;
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 14px;
+}
+
+
+/***********************  MEDIA QUERIES ************************/
+
+
+/* ----------- Tablets larger than 768px wide ----------- */
+@media (min-width: 768px) {
+	.section-one,
+	.section-two,
+	.section-three {
+		width: 33%;
+
+	}
+
+	.section-one h3,
+	.section-one li {
+		padding-right: 1.5rem;
+	}
+
+	.section-two h3, 
+	.section-two p,
+	.section-three h3,
+	.section-three p {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+
+	.section-one h3 {
+		padding-top: .625rem;
+	}
+
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
+
+	
+	.section-two h3,
+	.section-three h3 {
+		padding-top: .625rem;
+	}
+	
+	
+}
+
+
+
+
+/* ----------- Monitors larger than 1200px wide ----------- */
+@media (min-width: 1200px) { 
+	
+
+
 }
