@@ -50,7 +50,7 @@ header {
 header h1 {
 	width: 100%;
 	margin: 0;
-	padding: 2em 0 .5em 0;
+	padding: 1.5em 0 .5em 0;
 	border-bottom: 3px solid #77a466;
 	text-align: center;
 }
@@ -221,13 +221,16 @@ footer span {
 @media (min-width: 1200px) { 
 	header {
 	width: 90%;
+	padding-top: 2em;
 	justify-content: space-between;
-	align-items: flex-end;
+	align-items: center;
 }
 
 	header h1 {
-		width: 30%;
+		width: 25%;
 		border-bottom: none;
+		padding: 0;
+		text-align: left;
 	}
 
 	nav ul {
